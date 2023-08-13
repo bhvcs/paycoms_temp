@@ -1,0 +1,31 @@
+*{
+    padding: 0; margin: 0; list-style: none;
+}
+
+.history h2{ position: relative; font-size: 32px; color: #003b66; line-height: 1;}
+.history h2:before{content: ""; position: absolute; left: -48px; top:50%; width: 17px; height: 17px; border-radius: 100%;
+background: #fff; border: 5px solid #0094ff; transform: translateY(-50%); box-sizing: border-box;}
+.history .tab-content div{position: relative; padding: 0 0 0 48px;}
+.history .tab-content div:before{content:""; position: absolute; left: 8px; top: 0; width: 2px; height: 100%; background: #ddd;}
+.history .tab-content div:first-child:before{top: 25px; height: calc(100% - 10px);}
+.history ol{ padding: 20px 0 40px; margin: 0;}
+.history li{ font-size: 17px; color : #000; line-height: 29px;}
+
+
+
+.tab_type1 ul { display: flex; padding: 0; height:60px; border-bottom:1px solid #80caff;}
+.tab_type1 ul li { flex:1; cursor: pointer; color: #003b66;}
+.tab_type1 ul li:first-child { border-left: 1px solid #ddd;}
+.tab_type1 ul li{ display: block; height: 59px; border:1px solid #ddd; 
+	border-left: none; border-bottom:none; font-size: 20px; text-align: center; line-height: 59px; text-decoration: none;}
+.tab_type1 ul li.current { position: relative;height: 58px; border-color:#80caff; border-top-width: 2px; line-height:57px; border-bottom: 1px solid #fff; }
+.tab_type1 ul li.current:before { content: ""; position: absolute; left:-1px; top: -2px; width: 1px; height: 100%; background: #80caff; border-top:2px solid #80caff;}
+
+.tab-content{
+    display: none;
+    
+  }
+  
+.tab-content.current{
+    display: inherit;
+} 
