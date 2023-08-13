@@ -10946,6 +10946,7 @@ html {
 #sidebar-wrapper{
   text-align: center;
   min-height: 100vh;
+  display: none;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -10955,4 +10956,10 @@ html {
 }
 #sidebar-wrapper .list-group {
   width: 15rem;
+}
+
+@media(min-width: 992px){
+  #sidebar-wrapper{
+    display: block;
+  }
 }
