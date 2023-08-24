@@ -113,12 +113,38 @@
 }
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
+    list-style: none;
     font-size: 1.0em;
     font-weight: 500;
   margin-bottom: 0;
+  padding: 0;
 }
 .timeline .timeline-body > ul li{
-    margin-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.timeline .timeline-body > ul li:before{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 100%;
+  top: 0.5em;
+  right: -25px;
+}
+
+.timeline .timeline-inverted .timeline-body > ul li:before{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 100%;
+  top: 0.5em;
+  left: -25px;
 }
 
 @media (min-width: 768px) {
